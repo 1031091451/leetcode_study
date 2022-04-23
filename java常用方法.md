@@ -30,11 +30,10 @@ int length = ans.length;
 //初始化
 List<List<Integer>> ans = new ArrayList<List<Integer>>();
 
-//Arrays类排序
-Arrays.sort(nums);
+//ArrayList转换为Array
+List<int[]> ans = new ArrayList<int[]>();
+ans.toArray(new int[ans.size()][2]);
 
-//将数组转换为list
-Arrays.asList(nums[i], nums[left], nums[right]);
 ```
 
 
@@ -68,5 +67,25 @@ set.add(value);
 
 //search
 seat.contains(value);
+```
+
+
+
+# 6. Arrays方法
+
+```java
+//排序,传入匿名的Comparator类
+Arrays.sort(intervals, new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return a[0] - b[0];
+            }
+        });
+
+//Arrays类排序
+Arrays.sort(nums);
+
+//将数组转换为list
+Arrays.asList(nums[i], nums[left], nums[right]);
+
 ```
 
