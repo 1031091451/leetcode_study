@@ -89,3 +89,26 @@ Arrays.asList(nums[i], nums[left], nums[right]);
 
 ```
 
+
+
+# 7. Deque（栈或者队列）
+
+```java
+// 初始化
+private Deque<T> queue = new LinkedList<T>();
+
+//栈的入栈和出栈
+queue.offerFirst(T a); //入栈
+queue.pollFirst();  //出栈
+
+//队列的入对和出队
+queue.offerLast(T a); //入队
+queue.pollFirst();   //出队
+
+//清空
+queue.clear();
+
+//顶部元素
+queue.peekFirst();
+```
+
