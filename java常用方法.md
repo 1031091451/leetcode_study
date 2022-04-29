@@ -9,6 +9,19 @@ hashMap.containsKey();
 hashMap.get();
 hashMap.getOrDefault();
 //
+
+
+// 初始化
+Map<Integer, Set<Integer>> map = new HashMap<Integer, Set<Integer>>();
+
+//add
+map.put(key, value);
+
+//get
+map.get(key);
+
+//search
+map.contains(key)
 ```
 
 
@@ -38,25 +51,7 @@ ans.toArray(new int[ans.size()][2]);
 
 
 
-# 4. 哈希表
-
-```java
-// 初始化
-Map<Integer, Set<Integer>> map = new HashMap<Integer, Set<Integer>>();
-
-//add
-map.put(key, value);
-
-//get
-map.get(key);
-
-//search
-map.contains(key)
-```
-
-
-
-# 5. 集合
+# 4. 集合
 
 ```java
 // 初始化
@@ -71,7 +66,7 @@ seat.contains(value);
 
 
 
-# 6. Arrays方法
+# 5. Arrays方法
 
 ```java
 //排序,传入匿名的Comparator类
@@ -91,7 +86,7 @@ Arrays.asList(nums[i], nums[left], nums[right]);
 
 
 
-# 7. Deque（栈或者队列）
+# 6. Deque（栈或者队列）
 
 ```java
 // 初始化
